@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Share Tech Mono", monospace;
+  background-color: #0f3854;
+  background: radial-gradient(ellipse at center, #383705 0%, #000 70%);
+  background-size: 100%;
+}
+
+.clock {
+  width: 836px;
+  height: 240px;
+}
+
+#clock-btn {
+  width: 836px;
+  height: 20px;
+  background: #daf6ff;
+  float: left;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 20px rgba(242, 240, 145, 1), 0 0 20px rgba(242, 240, 145, 0);
+}
+
+.datetime {
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(242, 240, 145, 1), 0 0 20px rgba(242, 240, 145, 0);
+  width: 750px;
+  height: 150px;
+  padding: 15px 10px;
+  border: 3px solid #daf6ff;
+  box-shadow: 0 0 20px rgba(116, 114, 56, 0.795), 0 0 20px rgba(116, 114, 56, 0);
+  border-radius: 0 0 5px 5px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+  padding: 20px 40px;
+  float: left;
+}
+
+.date {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date span {
+  width: 33.33%;
+}
+
+.time {
+  font-size: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+
+.time-num {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time span {
+  position: relative;
+  margin: 0 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  box-shadow: 16px 14px 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(116, 114, 56, 1), 0 0 20px rgba(116, 114, 56, 0);
+}
+
+.btn::before {
+  content: "";
+  background-image: conic-gradient(#daf6ff 20deg, transparent 120deg);
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.btn::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #0f0f0f;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: inset 15px 15px 15px #252522;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
