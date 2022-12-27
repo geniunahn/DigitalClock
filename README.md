@@ -1,6 +1,6 @@
 # 디지털 시계 프로젝트
 - 제작자 : 안정원
-- 깃허브 url :
+- 깃허브 url : https://github.com/geniunahn/DigitalClock
 - 프로젝트 url : https://geniunahn.github.io/DigitalClock/
 
 # 제작 상황 및 목표
